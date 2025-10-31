@@ -103,19 +103,18 @@
   <ItemGroup>
     <ClInclude Include="AboutDlg.h" />
     <ClInclude Include="ChooseDlg.h" />
-    <ClInclude Include="diff\Myers.h" />
     <ClInclude Include="FindDlg.h" />
+    <ClInclude Include="hirschberg.h" />
+    <ClInclude Include="Levenshtein.h" />
     <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="Myers.h" />
     <ClInclude Include="OptionsDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TDiff.h" />
-    <ClInclude Include="diff\hirschberg.h" />
-    <ClInclude Include="diff\Levenshtein.h" />
     <ClInclude Include="Stopwatch.h" />
     <ClInclude Include="win32express.h" />
-    <ClInclude Include="out.h" />
     <ClInclude Include="tokenizer.h" />
   </ItemGroup>
   <ItemGroup>

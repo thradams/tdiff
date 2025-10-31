@@ -8,9 +8,9 @@
 #include <set>
 #include <ctype.h>
 #include <map>
-#include "diff/Levenshtein.h" 
+#include "Levenshtein.h" 
 #include "stopwatch.h"
-#include "diff/Myers.h"
+#include "Myers.h"
 #include "AboutDlg.h"
 #include "ChooseDlg.h"
 #include "OptionsDlg.h"

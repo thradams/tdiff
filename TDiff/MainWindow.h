@@ -2,12 +2,12 @@
 
 #include "resource.h"
 #include "win32express.h"
-#include "diff/hirschberg.h"
+#include "hirschberg.h"
 #include <vector>
 #include <set>
 #include "tokenizer.h"
-#include "out.h"
-#include "diff/Myers.h"
+
+#include "Myers.h"
 #include <unordered_set> 
 #include "FindDlg.h"
 
@@ -296,9 +296,9 @@ public:
   const wchar_t* m_pszSetEntry;
 
   // String original lida no texto
-  // Dependendo da comparação do Set(SetCompareLess) pode diferir
+  // Dependendo da comparaÃ§Ã£o do Set(SetCompareLess) pode diferir
   // de m_pszSetEntry
-  // Se a comparação SetCompareLess for exata pode até ser removido
+  // Se a comparaÃ§Ã£o SetCompareLess for exata pode atÃ© ser removido
   std::wstring m_text;
 
   const Lexemes&  Lexemes()  const
@@ -333,7 +333,7 @@ public:
 /*  bool operator == (const LineOfText& line) const
   {
     //aqui tem que ser bastante conservador..
-    // se o ponteiros forem diferentes tem que dizer que é igual
+    // se o ponteiros forem diferentes tem que dizer que Ã© igual
     // so se for muito parecido. Ver
     //quando sao diferentes eh tratado em:
     //Algorithm::Myers::EqualAB
@@ -350,7 +350,7 @@ inline bool IsTheSameLine(const LineOfText& a, const LineOfText& b)
 {
   return a.m_pszSetEntry == b.m_pszSetEntry;
 
-  //Exatamente igual ou só difere por espaços
+  //Exatamente igual ou sÃ³ difere por espaÃ§os
   if (a.m_pszSetEntry == b.m_pszSetEntry)
   {
     return true; 
@@ -396,7 +396,7 @@ inline bool IsTheSameLine(const LineOfText& a, const LineOfText& b)
 
 inline bool IsTheSameLineFlexibe(const LineOfText& a, const LineOfText& b)
 {
-  //Exatamente igual ou só difere por espaços
+  //Exatamente igual ou sÃ³ difere por espaÃ§os
   if (a.m_pszSetEntry == b.m_pszSetEntry)
   {
     return true; 
